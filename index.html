@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Script</title>
+</head>
+<body>
+    <h1>The Elements</h1>
+    <p>Seperate the Metals from the Non-Metals.</p>
+
+    <input type="text" id="element1" placeholder="Enter an element name">
+    <br><br>
+    <button id="subBtn">Submit</button>
+    <br>
+
+    <button py-click="Search_element">Search</button>
+    <div class="result">
+        <h3>Search Results</h3>
+        <span id="result"></span>
+
+        <p><b>Symbol</b> <span id="Symbol"></span></p>
+        <p><b>Atomic Mass</b> <span id="mass"></span></p>
+        <p><b>Atomic Number</b> <span id="num"></span></p>
+        <p><b>Pangalan</b> <span id="name"></span></p>
+    </div>
+
+    <py-script src="main.py"></py-script>
+
+
+
+</body>
+</html>
